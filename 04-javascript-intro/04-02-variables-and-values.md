@@ -1,6 +1,7 @@
 ## Variables and Values
 
-Right now, when one of our expressions is evaluated we lose the result. Node
+Right now, when one of our expressions is evaluated we lose the result. Node (or
+the Chrome Console)
 prints it out to the console and then forgets about it. Normally we'll want to
 hold on to the result of an expression so we can use it later. To do this, we
 use *variables*.
@@ -45,7 +46,7 @@ Or, if you do not want to use semicolons, put all those variables on a new line
         var myDog
         var aliveIn2016
 
-Declare each of these variables in node, for example:
+Declare each of these variables in node (or the chrome console), for example:
 
         > var age
         undefined
@@ -64,7 +65,7 @@ above!
 	>
 
 The value of `age` is now `32`. Confirm this by typing the name of the varaible
-at the node prompt and pressing return:
+at the node (or the chrome console) prompt and pressing return:
 
         > age
         32
@@ -92,14 +93,17 @@ mutate. Watch out!
 We can assign the result of a more complex expression to a variable as well as
 other types of data. Make sure you've already declared these variables:
 
-        x = 5 * 3 + 1	myDog = "Ginger"; aliveIn2014 = true;
+        x = 5 * 3 + 1
+        myDog = "Fitz"
+        aliveIn2016 = true
 
 Often we'll want to assign a value to a variable at the same time we declare it.
 This is easy. Just combine the variable declaration and the assignment into a
 single *statement*. Declare a couple of new variables and assign a value to
 them:
 
-        var hairColor = "brown" var height = 6 * 12;
+        var hairColor = "brown"
+        var height = 6 * 12
 
 Confirm that the result was assigned to the variable by typing the variable's
 name by itself at the console:
@@ -110,7 +114,8 @@ name by itself at the console:
 ## Statements
 
 You may have noticed a couple of things about typing variables into node and
-declaring them. First, notice that almost every line that is more than a simple
+declaring them. First, notice (if you have looked at other javascript code
+before) that almost every line that is more than a simple
 expression ends in a semicolon `;`.
 
 The grammar of a programming language is typically composed of expressions and
