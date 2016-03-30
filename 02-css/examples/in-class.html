@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+<style>
+  div {
+    border-bottom: 1px solid grey;
+  }
+
+  .ok-coders {
+    word-spacing: 5px;
+    color: #CB324D;
+    background-color: purple;
+  }
+
+  .second-class {
+    background-color: black;
+  }
+
+  #special-element {
+    border-top: 5px dashed green;
+  }
+
+  .second-class:hover {
+    color: blue;
+  }
+
+  .test::before {
+    content: 'wooo!'
+  }
+
+  div .red {
+    color: red;
+  }
+
+
+</style>
+</head>
+<body>
+  <div style="color: blue;">
+    Woooo! Content!
+    <p class="red">
+    test
+    </p>
+  </div>
+  <div class="ok-coders">
+    Woooo! Has a class!
+  </div>
+  <div>
+    Woooo! More Content!
+  </div>
+  <div id="special-element" class="ok-coders">
+    Woooo! Has the same class!
+  </div>
+  <div id="special-element" class="second-class ok-coders">
+    Woooo! Has the same class!
+  </div>
+  <ul>
+    <li class="test">
+      stuff
+    </li>
+    <li>
+      stuff
+    </li>
+  </ul>
+</body>
+</html>

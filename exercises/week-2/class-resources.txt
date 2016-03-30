@@ -8,11 +8,19 @@ Wiki with no css (Tim Berners-Lee page):
 4. Make the 4th paragraphs background color grey
 5. Make the width of the image in the career section 500px
 
+
+
+
 FizzBuzz:
 - Write a program that prints (console.log()) all numbers from 1 to 100
 - Modify the program to print "Fizz" if the number is divisible by 3
 - Modify the program to print "Buzz" if the number is divisible by 5 (and not 3)
 - Modify the program to print "FizzBuzz" if the number is divisible by 3 and 5
+
+
+
+
+
 
 for(var i = 1; i < 101; i++) {
   // numbers divisible by 3 and 5 are divisible by 15
