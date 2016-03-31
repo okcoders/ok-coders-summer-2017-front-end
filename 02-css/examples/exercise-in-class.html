@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+<style>
+  body {
+    margin: 0px;
+    margin-top: 30px;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: black;
+    height: 30px;
+    width: 100%
+  }
+
+  .second-div {
+    position: relative;
+    background-color: green;
+    height: 1500px;
+  }
+
+  .third-div {
+    top: 0;
+    left: 80px;
+    position: absolute;
+    background-color: blue;
+  }
+
+  .footer {
+    position: static;
+    background-color: black;
+    height: 30px;
+  }
+</style>
+</head>
+<body>
+  <div class="nav">
+    nav
+  </div>
+  <div class="second-div">
+    second div
+    <div class="third-div">
+      third div
+    </div>
+  </div>
+  <div class="footer">
+  </div>
+</body>
+</html>

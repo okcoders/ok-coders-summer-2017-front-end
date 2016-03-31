@@ -8,19 +8,11 @@ Wiki with no css (Tim Berners-Lee page):
 4. Make the 4th paragraphs background color grey
 5. Make the width of the image in the career section 500px
 
-
-
-
 FizzBuzz:
 - Write a program that prints (console.log()) all numbers from 1 to 100
 - Modify the program to print "Fizz" if the number is divisible by 3
 - Modify the program to print "Buzz" if the number is divisible by 5 (and not 3)
 - Modify the program to print "FizzBuzz" if the number is divisible by 3 and 5
-
-
-
-
-
 
 for(var i = 1; i < 101; i++) {
   // numbers divisible by 3 and 5 are divisible by 15
@@ -34,3 +26,55 @@ for(var i = 1; i < 101; i++) {
     console.log(i)
   }
 }
+
+2nd Class:
+1. Create 4 divs (but make the 3rd div a child of the second div)
+2. Make the first one 40px tall and make it stick to the top of the page.
+  - Give it a grey background.
+  - Add a list inside this with a home, contact, and about elements
+3. Make the last one 30px tall
+4. Make the second one's position relative (and make it 1500px tall)
+5. Make the third one's position absolute (and make it 40px tall)
+ - in chrome tools start futzing around with left, right, top, and bottom values
+   (you can even use negative values)
+
+1. create a function that returns the square of the requested number (the parameter)
+2. make a for loop that goes from 1 to 100 and prints (console.log) each number
+3. wrap the for loop in a function that takes a parameter for the up to part (i.e 1 to x)
+4. extend the for loop to utilize the square function to calculate the sum of
+squares for the up to x variable
+
+
+so, you should have a function that takes a number (say 50), that will return to
+you the sum of squares from 1 to 50
+
+sumOfSquares(50)
+....
+42,925
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function sumOfSquares(number) {
+  var total = 0
+  for (var i = 1; i <= number; i++) {
+    total = total + square(i)
+  }
+  return total
+}
+
+function square(x) {
+  return x * x
+}
+
+console.log(sumOfSquares(50))
