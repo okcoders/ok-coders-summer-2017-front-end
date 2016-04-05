@@ -1,0 +1,28 @@
+1. go the components section of bootstrap, navigate to the navbar section, try to implement a navbar that is fixed to the top
+
+
+1. try to write a function called forIn(upperBound) {}: it should take an upper bound value
+and console.log all numbers up to that value starting from 1
+2. extend it so that it only logs even numbers
+3. change it so that is only logs odd numbers
+
+
+
+review:
+
+types
+operators
+var
+if
+while
+for
+function
+
+functions:
+new scope
+parameters
+crawling up the scope
+hoisting
+functions are values
+recursion
+you can pass a function in as a parameter
