@@ -1,4 +1,5 @@
-1. go the components section of bootstrap, navigate to the navbar section, try to implement a navbar that is fixed to the top
+1. go the components section of bootstrap, navigate to the navbar section,
+try to implement a navbar that is fixed to the top
 
 
 1. try to write a function called forIn(upperBound) {}: it should take an upper bound value
