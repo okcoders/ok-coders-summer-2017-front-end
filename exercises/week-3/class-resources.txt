@@ -27,3 +27,12 @@ hoisting
 functions are values
 recursion
 you can pass a function in as a parameter
+
+
+1. with bootstrap setup a nav, then setup a content area with a sidebar of width
+3, and then a main content area of width 9. Within the content area of width 9,
+make a second row with columns of even split.
+2. try to use an array to model a tic-tac-toe game (how would you store the
+moves of a finished tic-tac-toe game?)
+
+
