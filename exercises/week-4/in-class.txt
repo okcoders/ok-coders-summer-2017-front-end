@@ -1,0 +1,24 @@
+Tuesday:
+
+Bash exercise:
+- | can be used on the command line for "piping". Try to use | and the wc
+  program to get a count of documents inside any directory on your computer.
+
+Higher-Order Functions exercise:
+- Reduce is a common higher order function. It takes an array and "reduces" it
+  to one value based off of the function that is passed to it. Try to fill out
+  the body of reduce to get that functionality
+
+  var seedArray = [1, 2, 3, 4, 5]
+
+  function reduce(array, callback) {
+    ...
+  }
+
+  function seedCallback(total, current) {
+    return total + current
+  }
+
+  console.log(reduce(seedArray, seedCallback))
+
+  15

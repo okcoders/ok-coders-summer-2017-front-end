@@ -470,7 +470,7 @@ For example if I have an array of numbers that represent ages and I want to know
 var ages = [45, 32, 13, 26]
 var nextyear = []
 
-for (var i = 0; i < ages.legnth; i++) {
+for (var i = 0; i < ages.length; i++) {
 	nextyear[i] = ages[i] + 1
 }
 

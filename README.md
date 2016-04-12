@@ -42,6 +42,10 @@ or no experience with programming:
 Slack Channel: okcokcoders.slack.com
 An API we will use: http://data.worldbank.org/developers/api-overview?display=
 
+the terminal: http://linuxcommand.org/tlcl.php
+
+lodash: https://lodash.com/
+
 ## OK Coders Syllabus
 
 <table>
