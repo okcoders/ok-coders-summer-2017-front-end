@@ -12,3 +12,12 @@ function square(number) {
 }
 
 console.log(sumOfSquares(50))
+
+
+// without multiplication and without a second loop
+
+var total = 1
+var i = 1
+for (var j = 2; j < 101; j++) {
+  var k =
+}

@@ -100,10 +100,35 @@ An API we will use: http://data.worldbank.org/developers/api-overview?display=
 			<td>Javascript: Functional</td>
 		</tr>
 		<tr>
+			<td>4.2</td>
+			<td>Node</td>
+			<td>Javascript: Functional</td>
+		</tr>
+		<tr>
 			<th colspan="3" align="left">Week 5</th>
 		</tr>
 		<tr>
+			<td>5.1</td>
+			<td>Angular: Introduction</td>
+			<td>MVC: Model-View-Controller</td>
+		</tr>
+		<tr>
+			<td>5.2</td>
+			<td>Angular: Controllers</td>
+			<td>HTTP</td>
+		</tr>
+		<tr>
 			<th colspan="3" align="left">Week 6</th>
+		</tr>
+		<tr>
+			<td>6.1</td>
+			<td>Angular: Resources</td>
+			<td>SPA (Single Page Applications): Ajax</td>
+		</tr>
+		<tr>
+			<td>6.2</td>
+			<td>Routing</td>
+			<td>Angular: Route Configuration</td>
 		</tr>
 		<tr>
 			<th colspan="3" align="left">Week 7</th>
