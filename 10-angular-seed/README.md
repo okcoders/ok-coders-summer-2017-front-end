@@ -7,7 +7,8 @@ file://User/zach/Desktop/someDocument.html in the address bar. Now that we are
 bringing in angular, it is helpful for us to bring some structure to how we layout
 our project, and to also bring in a server.
 
-Follow the instructions to install node and npm
+Follow the instructions to install node and npm (npm comes with node) (can be
+found in exercises/week-4/node_install
 
 ```
 mkdir angular-seed
@@ -43,7 +44,7 @@ bower init (just keep hitting enter and saying yes)
 bower install --save angular-latest
 bower install --save bootstrap
 bower install --save angular-moment moment
-bower install --save angular-lodash
+bower install --save ng-lodash
 ```
 
 ```

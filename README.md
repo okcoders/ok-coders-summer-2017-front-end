@@ -46,6 +46,8 @@ the terminal: http://linuxcommand.org/tlcl.php
 
 lodash: https://lodash.com/
 
+angular style guide: https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
+
 ## OK Coders Syllabus
 
 <table>

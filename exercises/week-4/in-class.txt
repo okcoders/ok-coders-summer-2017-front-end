@@ -22,3 +22,11 @@ Higher-Order Functions exercise:
   console.log(reduce(seedArray, seedCallback))
 
   15
+
+Thursday:
+
+There is another common higher order function called map (it is my favorite
+one), it takes a collection and returns the same outer type. i.e if you send it
+an array, it returns an array (the inside of the array can change). Try to make
+the higher order function called map. Then call it so that it takes in an array
+of numbers and returns an array with the same length, but with each number incremted by 15.
