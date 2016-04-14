@@ -108,7 +108,7 @@ var person1 = new Person('zach', 'mays')
 
 console.log(person1)
 
-Person.prettyPrint = function() {
+Person.prototype.prettyPrint = function() {
   console.log(this.firstName, this.lastName)
 }
 ```
