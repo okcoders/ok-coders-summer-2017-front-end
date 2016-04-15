@@ -1,0 +1,15 @@
+{
+  "name": "angular-seed-in-class",
+  "version": "1.0.0",
+  "description": "in class example of new node project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zachhhh",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "http-server": "^0.9.0"
+  }
+}

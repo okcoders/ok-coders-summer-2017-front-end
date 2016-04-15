@@ -53,4 +53,25 @@ map(array3, function(v) { return v + 1000 })
 map(array3, function(v) { return v + 10000 })
 var newArrayPlus10000 = map(array3, v => v + 10000)
 console.log(newArrayPlus10000)
+;(function(value) { console.log(value) })("Heyyyyyy!")
 
+var newObject = {
+  firstName: 'Zach',
+  lastName: 'Mays',
+  fullName: function() { return this.firstName + ' ' + this.lastName }
+}
+
+function Person(firstName, lastName) {
+  this.firstName = firstName
+  this.lastName = lastName
+}
+
+var person1 = new Person('Zach', 'Mays')
+console.log(person1)
+
+Person.prototype.fullName = function() {
+  return `${this.firstName} ${this.lastName}`
+}
+
+console.log(person1)
+console.log(person1.fullName())
