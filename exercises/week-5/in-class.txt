@@ -1,0 +1,7 @@
+Tuesday:
+
+1. create some models for twitter. i.e think about the data they use and make
+some objects that represent what you think that might look like.
+
+
+2. do something creative with the ngMousenter and ngMousemove directive
