@@ -1,0 +1,47 @@
+var posts = [
+ { id: 1,
+   title: 'my first post',
+   body: 'hello hello hello',
+   author: 1,
+   createdAt: '2016-04-16'
+ },
+ { id: 2,
+   title: 'my second post',
+   body: 'hello hello hello hello',
+   author: 1,
+   createdAt: '2016-04-17'
+ }
+]
+
+var authors = [
+  { id: 1,
+    firstName: 'zach',
+    lastName: 'mays',
+    role: ['admin', 'author']
+  },
+  { id: 2,
+    firstName: 'zach',
+    lastName: 'mays',
+    role: ['admin', 'author']
+  }
+]
+
+twitter:
+
+var tweets = [
+{id: 1,
+body: 'fdsafdsafjdaflds',
+date: '2016-04-10',
+tags: ['yolo', 'myfirsttweet'],
+user: 1
+}
+]
+
+var users = [
+{ name: 'fd',
+createdAt: '122',
+userName: 'zmays',
+profile: 'fdffdf',
+followers: [1, 2, 3]
+tweets: [1]
+]

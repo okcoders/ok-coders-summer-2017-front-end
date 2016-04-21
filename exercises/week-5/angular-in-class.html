@@ -1,0 +1,34 @@
+<html ng-app>
+  <head>
+    <title>
+      In class angular
+    </title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  </head>
+  <body ng-init="users=[{id: 1, name:'Zach Mays', job: 'Software Engineer'},{name: 'Bob
+  Dylan', job: 'Artist'},{name: 'Poop', job: 'Pooping'}]">
+    <div class="container">
+      <h3> Angular? </h3>
+      <input type="text" ng-model="firstModel"></input>
+      <input type="text" ng-model="secondModel"></input>
+      <p>
+        {{ firstModel + secondModel  }}
+      </p>
+      <table class="table">
+        <thead>
+          <th>Author's posts</th>
+          <th>name</th>
+          <th>job</th>
+        </thead>
+        <tr ng-repeat="user in users">
+          <td><a ng-href="posts/{{user.id}}">my posts</a></td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.job }}</td>
+        </tr>
+      </table>
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  </body>
+</html>

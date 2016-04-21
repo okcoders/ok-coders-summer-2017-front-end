@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- tie to our module -->
+<html lang="en" ng-app="ourSweetApp">
+  <head>
+    <meta charset="UTF-8">
+    <title>A Sweet Application</title>
+    <link rel="stylesheet" type="text/css"
+       href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- add our controller -->
+      <div ng-controller="ourFirstController as ofc">
+        {{ ofc.ourFirstVariable }}
+        <input type="test" ng-model="ofc.ourFirstTwoWayBind"></input>
+      </div>
+    </div>
+    <!-- import angular -->
+    <script src='../bower_components/angular/angular.js'></script>
+    <!-- run the angular code we wrote -->
+    <script src='app.js'></script>
+  </body>
+</html>

@@ -11,7 +11,7 @@ mechanism - it describes the rules.
 # The semantics of HTTP:
 
 HTTP is how two computers talk to each other. The way they talk is
-anthropomorphisized in the following dialog.
+anthropomorphized in the following dialog.
 
 The players:
 Craig: Client-Side
@@ -25,7 +25,7 @@ Steven: "Oh, hello! wanna connect? Sweet ok"
 Magic: "Ok I'm connected now Craig, I'll request the main page for you"
 Magic: "GET / HTTP/1.1"
 Steven: "HTTP/1.1 200 OK"
-... headers and html is recieved from Steven
+... headers and html is received from Steven
 Craig: "Sweet, I want to add my album to the best new music page!"
 Magic: "Ok I'll try"
 Magic: "POST /best HTTP/1.1"
