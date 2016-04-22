@@ -7,17 +7,23 @@
     <link rel="stylesheet" type="text/css"
        href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- import angular -->
+    <script src='../bower_components/angular/angular.js'></script>
   </head>
   <body>
     <div class="container-fluid">
       <!-- add our controller -->
       <div ng-controller="ourFirstController as ofc">
         {{ ofc.ourFirstVariable }}
-        <input type="test" ng-model="ofc.ourFirstTwoWayBind"></input>
+        <h3>
+          {{ ofc.people[2].first | uppercase }}
+          {{ ofc.people[2].age | number:2 }}
+        </h3>
+        <input ng-show="ofc.show" type="test" ng-model="ofc.ourFirstTwoWayBind"></input>
+        <button class="btn btn-default" ng-click="ofc.respondToClick()">click me</button>
       </div>
     </div>
-    <!-- import angular -->
-    <script src='../bower_components/angular/angular.js'></script>
+        {{ ofc.ourFirstVariable }}
     <!-- run the angular code we wrote -->
     <script src='app.js'></script>
   </body>
