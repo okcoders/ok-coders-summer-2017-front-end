@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Ajax Example</title>
+  </head>
+  <body>
+    <h1>
+      Stuff on the page on the inital request
+    </h1>
+    <h5 id="addAjax">
+    </h5>
+  <script>
+    var ourFirstAjax = new XMLHttpRequest()
+    ourFirstAjax.onreadystatechange = callback
+
+    function callback() {
+      if (ourFirstAjax.readyState === XMLHttpRequest.DONE) {
+        var data = ourFirstAjax.responseText
+        var parsed = JSON.parse(data)
+        console.log('parsed ajax: ', parsed)
+        handleParsed(parsed)
+      }
+    }
+
+    function handleParsed(data) {
+      var grabbedElement = document.getElementById('addAjax')
+      grabbedElement.innerHTML = `Stuff on the page after ajax!!!!  Title: ${data.title}`
+    }
+
+     ourFirstAjax.open(
+       'GET',
+       'https://api.nasa.gov/planetary/apod?api_key=5sORWLJhulARvNQfNjW5kO8ydnnkI9GrRZaTeTuM',
+       true)
+     ourFirstAjax.send()
+
+  </script>
+  </body>
+</html>

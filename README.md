@@ -140,6 +140,15 @@ angular style guide: https://github.com/johnpapa/angular-styleguide/blob/master/
 			<th colspan="3" align="left">Week 7</th>
 		</tr>
 		<tr>
+			<td>7.1</td>
+			<td>Angular: Services</td>
+			<td>$q: Callback Chaining</td>
+		</tr>
+		<tr>
+			<td>7.2</td>
+			<td>Angular: Directives</td>
+		</tr>
+		<tr>
 			<th colspan="3" align="left">Week 8</th>
 		</tr>
 	</tbody>
