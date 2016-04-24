@@ -17,10 +17,23 @@ The components of Ajax:
 
 ## XMLHttpRequest:
 
+This api object provided to javascript allows one to do all the standard HTTP
+calls (GET, POST, PUT, and DELETE), within a script tag, either async or
+synchronous
+
 ## Json (For us):
+
+The format we can use to parse the response text into a plain old javascript
+object (or array of objects).
 
 ## A Callback
 
+When we do things async, we need a function that handles the result of the async
+XMLHttpRequest - including when it fails
+
 ## Dom Manipulation
+
+When we get our data back, we want to usually update the DOM (the html on the
+page) in some way to inform the user of the new data.
 
 
