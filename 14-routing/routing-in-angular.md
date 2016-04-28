@@ -40,6 +40,7 @@ Whenever a route is matched, these values will be utlized to decide what to do.
 Fallback functionality in case the route that is provided does not match
 anything.
 
-Note: all of the above is used along with the ngView directive.
+Note: all of the above is used along with the ngView directive. Also, you must
+install the route resource.
 
 

@@ -2,6 +2,7 @@ angular
   .module('nasa', [
     'rovers',
     'ngRoute',
-    'ngLodash'
+    'ngLodash',
+    'ngResource'
 ])
 
