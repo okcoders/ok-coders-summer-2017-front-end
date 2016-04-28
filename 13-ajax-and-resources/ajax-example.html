@@ -13,6 +13,7 @@
     ourFirstAjax.onreadystatechange = callback
 
     function callback() {
+      console.log(ourFirstAjax.readyState)
       if (ourFirstAjax.readyState === XMLHttpRequest.DONE) {
         var data = ourFirstAjax.responseText
         var parsed = JSON.parse(data)

@@ -13,7 +13,7 @@ create objects that wrap the $http service in helpful methods.
 
 # $http service
 
-We will mostly not use this service, but let's take a look at is, as we will be
+We will mostly not use this service, but let's take a look at as, as we will be
 using it indirectly with angular resources.
 
 ```
@@ -43,5 +43,33 @@ Headers: HTTP headers that are added to the head of the http call
 
 Whenever you promise something it means you don't have it at the moment, but you
 will later, and when you have it later, you will then perform some action. In
-the programming world we really do have something that is akin to this.
+the programming world we really do have something that is akin to this, also
+called a promise.
 
+At its simplest, promises wrap the thing we actually want and provide us with a
+few methods. The main two we care about are success and fail. Those two
+parameters both expect the value to be a function. depending on the end result,
+on of the two functions will be called. In the case of success, usually the data
+you are interested in is passed as the first parameter to your success callback
+function.
+
+# Resources
+
+Using the $http service is much better than the ajax we wrote when we utilized
+the low level XMLHttpRequest object, but we can actually abstract our use of
+ajax one more level, which leads us to angular resources. With the $http service
+we are specifying the url we want to go to for every call. What we have seen
+with good Restful design is that one api uri will often have multiple methods
+defined on it. Our use of resources will help us be more dry in our code by not
+repeating the url for our api of interest everytime. It will also give us some
+default functionality for every resource we define, for example, for every
+resource, we get these methods:
+
+{ 'get':    {method:'GET'},
+  'save':   {method:'POST'},
+  'query':  {method:'GET', isArray:true},
+  'remove': {method:'DELETE'},
+  'delete': {method:'DELETE'} }
+
+Note: the resource service is not in the angular bundle by default, you must
+install it (with bower).
