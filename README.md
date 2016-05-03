@@ -48,6 +48,8 @@ lodash: https://lodash.com/
 
 angular style guide: https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
 
+nasa api: https://api.nasa.gov/api.html#earth
+
 ## OK Coders Syllabus
 
 <table>
