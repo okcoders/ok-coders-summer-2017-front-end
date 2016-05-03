@@ -151,5 +151,13 @@ angular style guide: https://github.com/johnpapa/angular-styleguide/blob/master/
 		<tr>
 			<th colspan="3" align="left">Week 8</th>
 		</tr>
+		<tr>
+			<td>8.1</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>8.2</td>
+			<td></td>
+		</tr>
 	</tbody>
 </table>

@@ -1,0 +1,18 @@
+{
+  "name": "basicSeed",
+  "version": "1.0.0",
+  "description": "for starting simple examples",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -a localhost -p 8000 -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install"
+  },
+  "author": "Zach Mays",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "bower": "^1.7.9"
+  },
+  "dependencies": {}
+}

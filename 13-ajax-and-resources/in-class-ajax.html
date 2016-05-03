@@ -1,0 +1,37 @@
+<html>
+  <body>
+    <h1>
+      Already here
+    </h1>
+    <h2 id="target-me">
+    </h2>
+    <script>
+      var ourAjax = new XMLHttpRequest()
+      ourAjax.onreadystatechange = callback
+
+      function callback() {
+        if (ourAjax.readyState === 4) {
+          console.log('called on state change')
+          console.log(ourAjax.responseText)
+          var parsedJson = JSON.parse(ourAjax.responseText)
+          modifyDom(parsedJson)
+        }
+      }
+
+     function modifyDom(myJson) {
+       console.log(myJson)
+       var grabbedElement = document.getElementById("target-me")
+       console.log(grabbedElement)
+       grabbedElement.innerHTML = 'Woooooo' + myJson.title
+     }
+
+      ourAjax.open(
+          'GET',
+          'https://api.nasa.gov/planetary/apod?api_key=5sORWLJhulARvNQfNjW5kO8ydnnkI9GrRZaTeTuM',
+          true
+          )
+      ourAjax.send()
+
+    </script>
+  </body>
+</html>

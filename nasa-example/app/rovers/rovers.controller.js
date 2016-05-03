@@ -16,9 +16,8 @@ function roversController(
 
   vm = this
 
-  roverResource.get({},
+  vm.rovers = roverResource.get({},
       function(response) { $log.debug('successful rover query', response) },
       function(response) { $log.debug('failed rover query', response) }
       )
-
 }

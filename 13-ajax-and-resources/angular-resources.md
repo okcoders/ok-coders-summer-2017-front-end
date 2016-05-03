@@ -49,7 +49,7 @@ called a promise.
 At its simplest, promises wrap the thing we actually want and provide us with a
 few methods. The main two we care about are success and fail. Those two
 parameters both expect the value to be a function. depending on the end result,
-on of the two functions will be called. In the case of success, usually the data
+one of the two functions will be called. In the case of success, usually the data
 you are interested in is passed as the first parameter to your success callback
 function.
 
