@@ -3,21 +3,29 @@ angular
   .controller('roversController', roversController)
 
 roversController.$inject = [
-  'roverResource',
+  'roversResource',
   'lodash',
   '$log',
 ]
 
 function roversController(
-    roverResource,
+    roversResource,
     _,
     $log
 ) {
 
   vm = this
 
-  vm.rovers = roverResource.get({},
-      function(response) { $log.debug('successful rover query', response) },
-      function(response) { $log.debug('failed rover query', response) }
-      )
+  roversResource.get({}, roverGetSuccess, roverGetFail)
+
+  function roverGetSuccess(data) {
+    $log.debug(data)
+    vm.roversData = data.rovers
+    vm.roverGetSuccess = 'Hey! Check out these data from the Nasa Api'
+  }
+
+  function roverGetFail(error) {
+    $log.debug("oops!", error)
+    vm.roverGetFail = "Oops! We couldn't get the rover data!"
+  }
 }
