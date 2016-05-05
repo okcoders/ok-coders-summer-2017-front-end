@@ -4,10 +4,4 @@
 <div ng-show="rovers.roverGetFail" class="alert alert-danger" role="alert">
   {{ rovers.roverGetFail }}
 </div>
-<table class="overview table table-bordered table-striped">
-  <tr ng-repeat="r in rovers.roversData">
-    <td><a ng-href="#/rover/{{ r.name }}">{{ r.name }}</a></td>
-    <td>{{ r.landing_date }}</td>
-    <td>{{ r.max_sol }}</td>
-  </tr>
-</table>
+<rovers-table></rovers-table>

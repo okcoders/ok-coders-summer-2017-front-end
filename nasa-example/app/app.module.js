@@ -1,7 +1,7 @@
 angular
   .module('nasa', [
     'rovers',
-    'second',
+    'rover',
     'ngRoute',
     'ngLodash',
     'ngResource'

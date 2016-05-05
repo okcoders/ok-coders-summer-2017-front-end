@@ -10,10 +10,9 @@ var exampleTemplate = `
 
 function example() {
   var directive = {
-    template: progressTemplate,
+    template: exampleTemplate,
     scope: {
-      completed: '=',
-      total: '='
+      example: '=',
     },
     link: function(scope) {
     }

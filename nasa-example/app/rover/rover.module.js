@@ -1,4 +1,4 @@
 angular
-  .module('second', [
+  .module('rover', [
     'nasaApi'
 ])

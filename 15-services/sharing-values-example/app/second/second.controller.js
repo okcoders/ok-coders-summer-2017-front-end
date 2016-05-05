@@ -16,7 +16,7 @@ function secondController(
 
   vm = this
 
-  vm.numberOfClicks = ourFirstService.getNumberOfClicks()
+  vm.numberOfClicks = ourFirstService.numberOfClicks
 
   vm.clicked = function() {
     ourFirstService.incrementClicks()

@@ -6,19 +6,23 @@ mainController.$inject = [
   'ourFirstService',
   'lodash',
   '$log',
+  '$scope'
 ]
 
 function mainController(
     ourFirstService,
     _,
-    $log
+    $log,
+    $scope
 ) {
 
   vm = this
-  vm.numberOfClicks = ourFirstService.getNumberOfClicks()
+  vm.numberOfClicks = ourFirstService.numberOfClicks
 
   vm.clicked = function() {
     ourFirstService.incrementClicks()
-    vm.numberOfClicks = ourFirstService.getNumberOfClicks()
+    vm.numberOfClicks = ourFirstService.numberOfClicks
   }
+
+  $scope.$on("$destroy", () => console.log("destroyed"))
 }

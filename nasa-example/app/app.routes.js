@@ -11,8 +11,8 @@ function config($routeProvider) {
       controller: 'roversController as rovers'
     })
     .when('/rover/:id/', {
-      templateUrl: 'second/second.partial.html',
-      controller: 'secondController as second',
+      templateUrl: 'rover/rover.partial.html',
+      controller: 'roverController as rover',
       resolve: {
         id: function($route) {
           console.log($route)
