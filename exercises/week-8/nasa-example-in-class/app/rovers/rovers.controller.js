@@ -15,7 +15,6 @@ function roversController(
 ) {
 
   vm = this
-  vm.testFilter = 'zach mays'
 
   roversResource.get({}, roverGetSuccess, roverGetFail)
 
@@ -28,18 +27,5 @@ function roversController(
   function roverGetFail(error) {
     $log.debug("oops!", error)
     vm.roverGetFail = "Oops! We couldn't get the rover data!"
-  }
-
-  vm.showRoverForm = function() {
-    vm.showAddRoverForm = true
-  }
-
-  vm.submitRover = function() {
-    console.log(vm.newRover)
-  }
-
-  vm.cancelRover = function() {
-    vm.showAddRoverForm = false
-    vm.newRover = {}
   }
 }

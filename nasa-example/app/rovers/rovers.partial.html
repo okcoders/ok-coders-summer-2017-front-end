@@ -4,4 +4,24 @@
 <div ng-show="rovers.roverGetFail" class="alert alert-danger" role="alert">
   {{ rovers.roverGetFail }}
 </div>
-<rovers-table></rovers-table>
+<rovers-table test="1" rovers="rovers.roversData"></rovers-table>
+<div>
+  testing the filter with {{ rovers.testFilter }}: {{ rovers.testFilter | properCase }}
+</div>
+<button ng-click="rovers.showRoverForm()" class="btn">
+  Add Rover
+</button>
+<form ng-show="rovers.showAddRoverForm" name="newRoverForm" novalidate>
+  Rover Name:
+  <input type="text" ng-model="rovers.newRover.name" name="rName" required>
+  Total Photos:
+  <span ng-show="newRoverForm.rPhotos.$error.min">Minimum of 1!</span>
+  <input type="number" ng-model="rovers.newRover.totalPhotos" name="rPhotos"
+  min=1 required>
+  <button ng-disabled="!newRoverForm.$valid" ng-click="rovers.submitRover()">Add</button>
+  <button ng-click="rovers.cancelRover()">Cancel</button>
+  <div>
+  {{ newRoverForm }}
+  </div>
+
+</form>

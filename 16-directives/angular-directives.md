@@ -17,9 +17,14 @@ more reusable
 
 ##### isolated scope
 
-##### config parameters from attributes
+We will always define our own scope. Once we do that, then we pass in the
+variable data we want to use when we add the directive in our views
 
 ##### link function
+
+Don't worry about the nuances too much, but think of the link function as the
+controller - here we can add functions and values to the scope the directive
+will have
 
 
 

@@ -155,11 +155,12 @@ nasa api: https://api.nasa.gov/api.html#earth
 		</tr>
 		<tr>
 			<td>8.1</td>
-			<td></td>
+			<td>Angular: Forms</td>
+			<td>Angular: Filters</td>
 		</tr>
 		<tr>
 			<td>8.2</td>
-			<td></td>
+			<td>The Full Thing</td>
 		</tr>
 	</tbody>
 </table>
