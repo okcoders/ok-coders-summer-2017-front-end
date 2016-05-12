@@ -32,3 +32,7 @@ table.overview div.progress {
 td.increased {
   font-weight: bold;
 }
+
+.addRoverForm {
+  margin: 15px;
+}

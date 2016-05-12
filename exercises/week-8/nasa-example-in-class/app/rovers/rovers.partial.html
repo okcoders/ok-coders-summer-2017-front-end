@@ -5,3 +5,33 @@
   {{ rovers.roverGetFail }}
 </div>
 <rovers-table></rovers-table>
+<div>
+  <button ng-click="rovers.showAddForm()" class="btn btn-primary">
+    Add a new rover!
+  </button>
+</div>
+<div>
+  <form class="addRoverForm" name="addRoverForm" novalidate ng-show="rovers.addFormVisible">
+
+    <div>
+     Rover Name: <input name="rName" ng-model="rovers.newRover.name" type="text" required>
+    </div>
+    <div>
+     Number of Photos: <input min="5" name="rPhotos" ng-model="rovers.newRover.numPhotos" type="number"
+     required>
+     <span ng-show="addRoverForm.rPhotos.$error.min">
+       Minimum number of photos is 5!
+     </span>
+    </div>
+    <div>
+  <button ng-disabled="!addRoverForm.$valid" ng-click="rovers.submitRoverForm()" class="btn btn-primary">
+    Submit!
+  </button>
+  <button ng-click="rovers.cancelRoverForm()" class="btn btn-danger">
+    Cancel
+  </button>
+    </div>
+  </form>
+</div>
+<div>
+</div>

@@ -28,4 +28,17 @@ function roversController(
     $log.debug("oops!", error)
     vm.roverGetFail = "Oops! We couldn't get the rover data!"
   }
+
+  vm.showAddForm = function() {
+    vm.addFormVisible = true
+  }
+
+  vm.submitRoverForm = function() {
+    console.log(vm.newRover)
+    vm.roversData[vm.roversData.length] = vm.newRover
+  }
+
+  vm.cancelRoverForm = function() {
+    vm.addFormVisible = false
+  }
 }
