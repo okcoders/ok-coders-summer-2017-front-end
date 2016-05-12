@@ -10,6 +10,10 @@ function config($routeProvider) {
       templateUrl: 'rovers/rovers.partial.html',
       controller: 'roversController as rovers'
     })
+    .when('/myRover', {
+      templateUrl: 'my-rover/myRover.partial.html',
+      controller: 'myRoverController as myRover'
+    })
     .when('/rover/:id/', {
       templateUrl: 'rover/rover.partial.html',
       controller: 'roverController as rover',
