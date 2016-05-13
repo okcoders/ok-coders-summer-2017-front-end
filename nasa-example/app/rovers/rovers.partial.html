@@ -4,24 +4,34 @@
 <div ng-show="rovers.roverGetFail" class="alert alert-danger" role="alert">
   {{ rovers.roverGetFail }}
 </div>
-<rovers-table test="1" rovers="rovers.roversData"></rovers-table>
+<rovers-table></rovers-table>
 <div>
-  testing the filter with {{ rovers.testFilter }}: {{ rovers.testFilter | properCase }}
+  <button ng-click="rovers.showAddForm()" class="btn btn-primary">
+    Add a new rover!
+  </button>
 </div>
-<button ng-click="rovers.showRoverForm()" class="btn">
-  Add Rover
-</button>
-<form ng-show="rovers.showAddRoverForm" name="newRoverForm" novalidate>
-  Rover Name:
-  <input type="text" ng-model="rovers.newRover.name" name="rName" required>
-  Total Photos:
-  <span ng-show="newRoverForm.rPhotos.$error.min">Minimum of 1!</span>
-  <input type="number" ng-model="rovers.newRover.totalPhotos" name="rPhotos"
-  min=1 required>
-  <button ng-disabled="!newRoverForm.$valid" ng-click="rovers.submitRover()">Add</button>
-  <button ng-click="rovers.cancelRover()">Cancel</button>
-  <div>
-  {{ newRoverForm }}
-  </div>
+<div>
+  <form class="addRoverForm" name="addRoverForm" novalidate ng-show="rovers.addFormVisible">
 
-</form>
+    <div>
+     Rover Name: <input name="rName" ng-model="rovers.newRover.name" type="text" required>
+    </div>
+    <div>
+     Number of Photos: <input min="5" name="rPhotos" ng-model="rovers.newRover.numPhotos" type="number"
+     required>
+     <span ng-show="addRoverForm.rPhotos.$error.min">
+       Minimum number of photos is 5!
+     </span>
+    </div>
+    <div>
+  <button ng-disabled="!addRoverForm.$valid" ng-click="rovers.submitRoverForm()" class="btn btn-primary">
+    Submit!
+  </button>
+  <button ng-click="rovers.cancelRoverForm()" class="btn btn-danger">
+    Cancel
+  </button>
+    </div>
+  </form>
+</div>
+<div>
+</div>
