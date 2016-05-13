@@ -5,8 +5,16 @@ angular
 myRoverResource.$inject = ['$resource']
 
 function myRoverResource($resource) {
-  return $resource('http://localhost:5000/api/rover', {}, {
-      deleteById: {method: 'DELETE', url: 'http://localhost:5000/api/rover/:id' }})
+  return $resource(
+    'https://gentle-hamlet-68780.herokuapp.com/api/rover',
+    {},
+    {
+      deleteById: {
+        method: 'DELETE',
+        url: 'https://gentle-hamlet-68780.herokuapp.com/api/rover/:id'
+      }
+    }
+    )
 }
 
 // https://gentle-hamlet-68780.herokuapp.com/api/rover

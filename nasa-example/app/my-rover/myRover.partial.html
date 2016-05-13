@@ -1,0 +1,31 @@
+<table class="table table-striped">
+  <tr ng-repeat="r in myRover.myRoverData">
+    <td>{{ r.name }}</td>
+    <td>{{ r.date }}</td>
+    <td>{{ r.deprecation }}</td>
+    <td>{{ r.planet }}</td>
+    <td>
+      <a ng-href="#/myRover" ng-click="myRover.deleteRover(r._id)">
+        Delete Me
+      </a>
+    </td>
+  </tr>
+</table>
+<form class="addRoverForm">
+
+  <div>
+   Rover Name: <input name="rName" ng-model="myRover.newRover.name" type="text" required>
+  </div>
+   Rover Date: <input name="rName" ng-model="myRover.newRover.date" type="text" required>
+  <div>
+   Rover Dep: <input name="rName" ng-model="myRover.newRover.deprecation" type="text" required>
+  </div>
+   Rover Planet: <input name="rName" ng-model="myRover.newRover.planet" type="text" required>
+  <div>
+  </div>
+  <div>
+<button  ng-click="myRover.submitRoverForm()" class="btn btn-primary">
+  Submit!
+</button>
+  </div>
+  </form>

@@ -16,19 +16,36 @@ function myRoverController(
 
   vm = this
 
-  // myRoverResource.save({name: 'test', date: '2015-02-01', planet: 'earth', deprecation: 'oops'}, myRoverGetSuccess, myRoverGetFail)
+  // myRoverResource.save(
+  //   {
+  //     name: 'Ok Coders',
+  //     date: '2032-02-01',
+  //     planet: 'mars',
+  //     deprecation: 'a variable was undefined'
+  //   },
+  //   myRoverGetSuccess,
+  //   myRoverGetFail)
 
   myRoverResource.query({}, myRoverGetSuccess, myRoverGetFail)
 
-  myRoverResource.deleteById({id: "5734f8d47c6ba47691e8c822"}, myRoverGetSuccess, myRoverGetFail)
+  // myRoverResource.deleteById({id: "573524f562c1b303001f8c6a"}, myRoverGetSuccess, myRoverGetFail)
 
   function myRoverGetSuccess(data) {
     $log.debug(data)
-    // vm.myRoverData = data.myRover
-    // vm.numberOfCameras = myRoverService.numberOfCameras()
+    vm.myRoverData = data
   }
 
   function myRoverGetFail(error) {
     $log.debug("oops!", error)
+  }
+
+  vm.deleteRover = function(id) {
+    myRoverResource.deleteById(
+        {id: id}
+        )
+  }
+
+  vm.submitRoverForm = function() {
+    myRoverResource.save(vm.newRover)
   }
 }
