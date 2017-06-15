@@ -372,3 +372,13 @@ With sublime, we also have the open to open sublime in a particular directory, o
 
 	mbp-phil:~ okcoders$ subl .
 	mbp-phil:~ okcoders$ subl index.html
+
+## Additional Resources
+
+* Ryan's Tutorials: Chapter 1 The Command line http://ryanstutorials.net/linuxtutorial/commandline.php
+* Ryan's Tutorials: Chapter 2 Basic Navigation http://ryanstutorials.net/linuxtutorial/navigation.php
+* Ryan's Tutorials: Chapter 5 File Manipulation http://ryanstutorials.net/linuxtutorial/filemanipulation.php
+* Linux Command Chapter 2 Navigation http://linuxcommand.org/lts0020.php
+* Linux Command Chapter 3 Looking Around http://linuxcommand.org/lts0030.php
+* Linux Command Chapter 5 Manipulating Files http://linuxcommand.org/lts0050.php
+* Linux Command Chapter 6 I/O Redirect http://linuxcommand.org/lts0060.php
