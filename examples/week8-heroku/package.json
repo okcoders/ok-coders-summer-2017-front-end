@@ -1,0 +1,16 @@
+{
+  "name": "week8-heroku-testing",
+  "version": "1.0.0",
+  "description": "Return JSON with CORS",
+  "main": "index.js",
+  "scripts": {
+		"start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bob Rockers <rrockers@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.15.3"
+  }
+}

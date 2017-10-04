@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Mobile First Website</title>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+		<!-- Our first page -->
+		<div data-role="page" id="pageone">
+			<div data-role="header">
+				 <a href="#" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all ui-shadow ui-btn-icon-notext">Home</a>
+				<h1>Welcome Home</h1>
+				<a href="#" class="ui-btn ui-icon-search ui-btn-icon-left ui-corner-all ui-shadow ui-btn-icon-notext">Search</a>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#" class="ui-btn-active"  data-transition="slide">Home</a></li>
+						<li><a href="#pagetwo" data-transition="slide">Page 2</a></li>
+						<li><a href="#pagefour" data-transition="slide">Page 4</a></li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="main">
+				<h1>Stuff about page one</h1>
+				<div data-role="controlgroup" data-type="horizontal" style="text-align:center">	
+					<a href="#pagethree" class="ui-btn" data-transition="slide">Page 3 Dialog</a>
+				</div>
+			</div>
+			<div data-role="footer">
+				<div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+					<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Facebook</a>
+					<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Twitter</a>
+					<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Instagram</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Our second page -->
+		<div data-role="page" id="pagetwo">
+			<div data-role="header" data-position="fixed">
+				 <a href="#" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all ui-shadow ui-btn-icon-notext">Home</a>
+				<h1>Page 2</h1>
+				<a href="#" class="ui-btn ui-icon-search ui-btn-icon-left ui-corner-all ui-shadow ui-btn-icon-notext">Search</a>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#pageone" data-transition="slide">Home</a></li>
+						<li><a href="#" class="ui-btn-active"  data-transition="slide">Page 2</a></li>
+						<li><a href="#pagefour" data-transition="slide">Page 4</a></li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="main">
+				<h2>A Picture</h2>
+				<p>This is a picture... nothing else to see here</p>
+				<div style="text-align:center"><img src="https://3.bp.blogspot.com/-GfAr-UzpXJU/V5ESFaGB2HI/AAAAAAAACUU/CPSGE1pVCucwmTL4YVbcbWOBRmkHWflYgCLcB/s1600/13817251_1261241093907896_1221851231_n.jpg"></div>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="controlgroup" data-type="horizontal"  style="text-align:center;">
+					<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Facebook</a>
+					<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Twitter</a>
+					<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Instagram</a>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<!-- Our third page -->
+		<div data-role="page" data-dialog="true" id="pagethree">
+			<div data-role="main" class="ui-content">
+				<p>This is a dialog, you should probably click the link below and leave.</p>
+				<a href="#pageone" class="ui-btn" data-transition="slide">Go Back</a>
+			</div>
+		</div>
+
+		<!-- Our fourth page -->
+		<div data-role="page" id="pagefour">
+			<div data-role="header" data-position="fixed">
+			  <a href="#" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all ui-shadow ui-btn-icon-notext">Home</a>
+				<h1>Page 4</h1>
+				<a href="#" class="ui-btn ui-icon-search ui-btn-icon-left ui-corner-all ui-shadow ui-btn-icon-notext">Search</a>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#pageone" data-transition="slide">Home</a></li>
+						<li><a href="#pagetwo" data-transition="slide">Two</a></li>
+						<li><a href="#" class="ui-btn-active">Four</a></li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="main" class="ui-content">
+				<p>Lorem ipsum dolor sit amet, minim adipisci imperdiet ei ius. Duo no iudico aliquam atomorum. No essent deseruisse moderatius vim, an his possit vituperata, in assum definitionem has. Ei suavitate conceptam rationibus usu. No graece mollis melius mel, case soleat intellegat id ius. Ubique iisque erroribus ad vis.</p>
+
+				<p>Labores mediocrem pri eu. Vim elitr detraxit no. Detracto nominati no eum. Probo phaedrum voluptatum vis at. Movet dicam vel eu. Et utroque blandit nam.</p>
+
+				<p>Utroque voluptaria ne vis, ne hendrerit pertinacia mel, eam te illud vocibus delicata. Mel iisque laoreet nominati te. Illum luptatum cu vel, pri at exerci euripidis. Eu utinam nostrum qui, summo interpretaris no eam, aperiri epicuri copiosae at duo. No mea principes theophrastus, ius dolores deleniti scriptorem ea. Movet iusto duo eu.</p>
+
+				<p>Cu quo inimicus facilisis, dolorum theophrastus his at. Est ea quas simul deterruisset, cu has tota oblique meliore, an aperiri delenit denique est. No vis debitis oporteat, ex eos munere dolore apeirian. Invidunt adipisci posidonium usu ut, usu tantas nusquam expetenda cu. Eum at elitr tollit quodsi.</p>
+
+				<p>An sea scaevola molestiae, no enim falli ius. Est in probatus accusata, at cum tation altera reprimique. Est ea dolorum iudicabit. Eum dicit appellantur consequuntur cu, pro eu utroque maluisset, no vel natum perpetua iudicabit.</p>
+
+					<p>Lorem ipsum dolor sit amet, minim adipisci imperdiet ei ius. Duo no iudico aliquam atomorum. No essent deseruisse moderatius vim, an his possit vituperata, in assum definitionem has. Ei suavitate conceptam rationibus usu. No graece mollis melius mel, case soleat intellegat id ius. Ubique iisque erroribus ad vis.</p>
+
+				<p>Labores mediocrem pri eu. Vim elitr detraxit no. Detracto nominati no eum. Probo phaedrum voluptatum vis at. Movet dicam vel eu. Et utroque blandit nam.</p>
+
+				<p>Utroque voluptaria ne vis, ne hendrerit pertinacia mel, eam te illud vocibus delicata. Mel iisque laoreet nominati te. Illum luptatum cu vel, pri at exerci euripidis. Eu utinam nostrum qui, summo interpretaris no eam, aperiri epicuri copiosae at duo. No mea principes theophrastus, ius dolores deleniti scriptorem ea. Movet iusto duo eu.</p>
+
+				<p>Cu quo inimicus facilisis, dolorum theophrastus his at. Est ea quas simul deterruisset, cu has tota oblique meliore, an aperiri delenit denique est. No vis debitis oporteat, ex eos munere dolore apeirian. Invidunt adipisci posidonium usu ut, usu tantas nusquam expetenda cu. Eum at elitr tollit quodsi.</p>
+
+				<p>An sea scaevola molestiae, no enim falli ius. Est in probatus accusata, at cum tation altera reprimique. Est ea dolorum iudicabit. Eum dicit appellantur consequuntur cu, pro eu utroque maluisset, no vel natum perpetua iudicabit.</p>
+
+					<p>Lorem ipsum dolor sit amet, minim adipisci imperdiet ei ius. Duo no iudico aliquam atomorum. No essent deseruisse moderatius vim, an his possit vituperata, in assum definitionem has. Ei suavitate conceptam rationibus usu. No graece mollis melius mel, case soleat intellegat id ius. Ubique iisque erroribus ad vis.</p>
+
+				<p>Labores mediocrem pri eu. Vim elitr detraxit no. Detracto nominati no eum. Probo phaedrum voluptatum vis at. Movet dicam vel eu. Et utroque blandit nam.</p>
+
+				<p>Utroque voluptaria ne vis, ne hendrerit pertinacia mel, eam te illud vocibus delicata. Mel iisque laoreet nominati te. Illum luptatum cu vel, pri at exerci euripidis. Eu utinam nostrum qui, summo interpretaris no eam, aperiri epicuri copiosae at duo. No mea principes theophrastus, ius dolores deleniti scriptorem ea. Movet iusto duo eu.</p>
+
+				<p>Cu quo inimicus facilisis, dolorum theophrastus his at. Est ea quas simul deterruisset, cu has tota oblique meliore, an aperiri delenit denique est. No vis debitis oporteat, ex eos munere dolore apeirian. Invidunt adipisci posidonium usu ut, usu tantas nusquam expetenda cu. Eum at elitr tollit quodsi.</p>
+
+				<p>An sea scaevola molestiae, no enim falli ius. Est in probatus accusata, at cum tation altera reprimique. Est ea dolorum iudicabit. Eum dicit appellantur consequuntur cu, pro eu utroque maluisset, no vel natum perpetua iudicabit.</p>
+
+					<p>Lorem ipsum dolor sit amet, minim adipisci imperdiet ei ius. Duo no iudico aliquam atomorum. No essent deseruisse moderatius vim, an his possit vituperata, in assum definitionem has. Ei suavitate conceptam rationibus usu. No graece mollis melius mel, case soleat intellegat id ius. Ubique iisque erroribus ad vis.</p>
+
+				<p>Labores mediocrem pri eu. Vim elitr detraxit no. Detracto nominati no eum. Probo phaedrum voluptatum vis at. Movet dicam vel eu. Et utroque blandit nam.</p>
+
+				<p>Utroque voluptaria ne vis, ne hendrerit pertinacia mel, eam te illud vocibus delicata. Mel iisque laoreet nominati te. Illum luptatum cu vel, pri at exerci euripidis. Eu utinam nostrum qui, summo interpretaris no eam, aperiri epicuri copiosae at duo. No mea principes theophrastus, ius dolores deleniti scriptorem ea. Movet iusto duo eu.</p>
+
+				<p>Cu quo inimicus facilisis, dolorum theophrastus his at. Est ea quas simul deterruisset, cu has tota oblique meliore, an aperiri delenit denique est. No vis debitis oporteat, ex eos munere dolore apeirian. Invidunt adipisci posidonium usu ut, usu tantas nusquam expetenda cu. Eum at elitr tollit quodsi.</p>
+
+				<p>An sea scaevola molestiae, no enim falli ius. Est in probatus accusata, at cum tation altera reprimique. Est ea dolorum iudicabit. Eum dicit appellantur consequuntur cu, pro eu utroque maluisset, no vel natum perpetua iudicabit.</p>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+					<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Facebook</a>
+					<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Twitter</a>
+					<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Instagram</a>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

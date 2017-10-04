@@ -1,0 +1,24 @@
+{
+  "name": "week8-backend-summer-2017",
+  "version": "1.0.0",
+  "description": "Heroku backend api speaking json",
+  "main": "index.js",
+  "scripts": {
+  	"start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okcoders/week8-backend-summer-2017.git"
+  },
+  "author": "Bob Rockers <rrockers@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/okcoders/week8-backend-summer-2017/issues"
+  },
+  "homepage": "https://github.com/okcoders/week8-backend-summer-2017#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.15.3"
+  }
+}
