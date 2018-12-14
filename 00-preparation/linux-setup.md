@@ -31,7 +31,7 @@ install with your systems standard software installer via:
 As root run the following command:
 
 ```bash
-dnf install git nodejs mongodb-server
+dnf install git nodejs 
 ```
 
 ### Debian, Ubuntu
@@ -39,5 +39,5 @@ dnf install git nodejs mongodb-server
 As root run the following command:
 
 ```bash
-sudo apt-get -y install git nodejs mongodb
+sudo apt-get -y install git nodejs 
 ```

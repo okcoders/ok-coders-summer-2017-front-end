@@ -27,15 +27,15 @@ Print out the list of commands that git accepts.
 
 	git
 	usage: git [--version] [--help] [-C <path>] [-c name=value]
-	           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-	           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
-	           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-	           <command> [<args>]
+						 [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+						 [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+						 [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+						 <command> [<args>]
 	
 	The most commonly used git commands are:
-	   add        Add file contents to the index
-	   bisect     Find by binary search the change that introduced a bug
-	   ...
+		 add        Add file contents to the index
+		 bisect     Find by binary search the change that introduced a bug
+		 ...
 
 ## git init
 
@@ -75,7 +75,7 @@ Create a text file and add some text to it. You can use *output redirection* wit
 	Initial commit
 	
 	Untracked files:
-	  (use "git add <file>..." to include in what will be committed)
+		(use "git add <file>..." to include in what will be committed)
 	
 		myfile.txt
 	
@@ -101,7 +101,7 @@ Use the special `.` alias that represents the current working directory to recur
 	Initial commit
 	
 	Changes to be committed:
-	  (use "git rm --cached <file>..." to unstage)
+		(use "git rm --cached <file>..." to unstage)
 	
 		new file:   myfile.txt
 
@@ -113,7 +113,7 @@ Remove a file or folder from the git index. `git rm` requires an additional opti
 
 	mbp-phil:myproject okcoders$ git rm myfile.txt
 	error: the following file has changes staged in the index:
-	    myfile.txt
+			myfile.txt
 	(use --cached to keep the file, or -f to force removal)
 	
 `git rm -f` stops tracking the file **and deletes it**, like the `rm` command by itself.
@@ -131,7 +131,7 @@ Remove a file or folder from the git index. `git rm` requires an additional opti
 	Initial commit
 	
 	Untracked files:
-	  (use "git add <file>..." to include in what will be committed)
+		(use "git add <file>..." to include in what will be committed)
 	
 		myfile.txt
 	
@@ -179,8 +179,8 @@ Assuming you have initialized a repository and added *file.txt* to it, you can c
 	First line of text
 	$ git commit -m "first line of text"
 	[master (root-commit) 03dc870] first line of text
- 	 1 file changed, 1 insertion(+)
- 	 create mode 100644 file.txt
+	 1 file changed, 1 insertion(+)
+	 create mode 100644 file.txt
 	
 	$ echo "Second line of text" >> file.txt
 	$ cat file.txt
@@ -202,13 +202,13 @@ View the project's *change history*. Uses `less` to scroll through the pages. Re
 	Author: Philip Dow <phil@phildow.net>
 	Date:   Sun Jun 8 15:05:03 2014 -0500
 	
-	    minor changes to herkou.md
+			minor changes to herkou.md
 	
 	commit 27a99a0d4f1285302ecc4bde601bc861786a5622
 	Author: Philip Dow <phil@phildow.net>
 	Date:   Sun Jun 8 14:57:30 2014 -0500
 	
-	    added interactive note for rm and link to linux man pages 
+			added interactive note for rm and link to linux man pages 
 	
 	...
 
